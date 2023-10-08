@@ -1,0 +1,105 @@
+*{
+    margin:auto;
+    padding: auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-content: center;
+}
+.display-area{
+    width:400px;
+    height:460px;
+    background-color: rgb(211, 212, 212); 
+    margin-top: 20px;
+    padding: 20px;
+    border:solid black;
+    border-radius: 15px;
+    
+}
+.items{
+    border: 5px solid black;
+    padding: 5px;
+}
+.n0{
+    grid-area:n0;
+    
+}
+.n00{
+    grid-area:n00;
+}
+.n1{
+    grid-area:n1;
+}
+.n2{
+    grid-area:n2;
+}
+.n3{
+    grid-area:n3;
+}
+.n4{
+    grid-area:n4;
+}
+.n5{
+    grid-area:n5;
+}
+.n6{
+    grid-area:n6;
+}
+.n7{
+    grid-area:n7;
+}
+.n8{
+    grid-area:n8;
+}
+.n9{
+    grid-area:n9;
+}
+.equ{
+    grid-area:equal;
+    width:100px;
+    display:flex;
+    justify-content: center;
+}
+.addi{
+    grid-area:add;
+}
+.sub{
+    grid-area:sub;
+}
+.mul{
+    grid-area:mul;
+}
+.div{
+    grid-area:div;
+}
+.mod{
+    grid-area:mod;
+}
+.cl{
+    grid-area:clear;
+}
+.arr{
+    grid-area:icon;
+}
+#res-sec{
+    grid-area:res-sec;
+    background-color: greenyellow;
+    color: red;
+    padding: 15px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 20px;
+}
+.buttons{
+    display: grid;
+    grid-row: 100px 100px 100px 100px 100px;
+    grid-template-areas:"clear icon mod mul"
+                        "n7 n8 n9 div"
+                        "n4 n5 n6 sub"
+                        "n1 n2 n3 add"
+                        "n0 n00 equal equal";
+    padding:30px;     
+    row-gap: 2rem;               
+}
